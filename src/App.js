@@ -1,17 +1,20 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Homepage from './pages/Homepage';
+import Creators from './pages/Creators';
+import SignUp from './pages/SignUp';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
-    <div style={{ textAlign: 'center' }}>
-      <header>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Homepage/>}/>
+        <Route path='/creators' element={<Creators/>}/>
+        <Route path='/signup' element={<SignUp/>}/>
+        <Route path='/privacypolicy' element={<PrivacyPolicy/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

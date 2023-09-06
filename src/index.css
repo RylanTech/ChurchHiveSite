@@ -1,0 +1,25 @@
+.navbarHead {
+    width: 100px!important;
+}
+.navbar {
+    background-color: white;
+}
+
+.wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;     
+}
+
+#slide {
+    position: absolute;
+    left: -400px;
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+}
+
+.wrapper2 #slide {
+    transition: 1s;
+    left: 0;
+}
