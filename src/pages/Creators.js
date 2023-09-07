@@ -9,33 +9,39 @@ function Creators() {
     const developers = [
         {
             name: "Rylan Workman",
-            imageUrl: "",
-            description: "test",
-            linkedIn: ""
+            imageUrl: "/Rylan.jpg",
+            description: `When I was younger I really enjoyed learning about technology. One project I did was taking a laptop base and making it work without the display. I guess you can say I ran my laptop "headless". This led to my interest in development. I loved learning about HTML & CSS to make websites. Little did I know, that I would go so much further to learn things like Javascript, Bootstrap, React, Express.js, mySQL and much more. It also led to my further interest in tinkering with hardware. I've made my own homemade NAS and turned it into a VPN with wireguard so I can access my files from anywhere in the world. I started mining crypto and made a dedicated server for it. I learned so much going through projects like that!
+            Today, I stay up-to-date on the community around technology and development because that is what I love to do. I'm excited to create applications and devices that will improve the world around me!`,
+            linkedIn: "https://www.linkedin.com/in/rylanworkman/",
+            position: "DevOps Engineer & Backend Developer"
         },
         {
-            name: "Anne Kinsmen",
-            imageUrl: "",
-            description: "test",
-            linkedIn: ""
+            name: "Anne Kinsman",
+            imageUrl: "/Anne.jfif",
+            description: "With curiosity as my compass in the world of technology, I will unravel digital mysteries and craft new innovative solutions. My goal is with each line of code, to leave a lasting impact for those around me while pushing the boundaries of what is possible. Where will your curiosity lead you?",
+            linkedIn: "https://www.linkedin.com/in/anne-kinsman/",
+            position: "API Engineer, Frontend Developer & Backend Developer"
         },
         {
             name: "Momo Barlow",
-            imageUrl: "",
-            description: "test",
-            linkedIn: ""
+            imageUrl: "/momo.jfif",
+            description: `Nothing is impossible! Never stop growing! Problem solving is my skill!`,
+            linkedIn: "https://www.linkedin.com/in/momobarlow/",
+            position: "Backend Developer"
         },
         {
             name: "Andrew Brown",
             imageUrl: "",
-            description: "test",
-            linkedIn: ""
+            description: "My resume states that I am a Software Developer/Professional Dancer. I have extensive experience with the JavaScript MERN stack. I have developed apps that utilize a React front end connected to a Node.js backend using either a MySQL database or a MongoDB database, along with authentication and API calls. I was also a competitive ballroom dancer for nearly a decade. ",
+            linkedIn: "https://www.linkedin.com/in/andrew-f-g-brown/",
+            position: "Frontend Developer"
         },
         {
             name: "Jeff Ordway",
-            imageUrl: "",
-            description: "test",
-            linkedIn: ""
+            imageUrl: "/Jeff.jfif",
+            description: "Hey there! It’s me, Jeff Ordway. I’m a former Parks and Recreation professional turned avid developer, designer, and marketer. I am passionate about harnessing my creativity, problem-solving skills, and adventurous spirit to design innovative, delightful solutions that inspire hope, ignite joy, and empower others.",
+            linkedIn: "https://www.linkedin.com/in/jeffordway/",
+            position: "Frontend Developer"
         }
     ]
 
@@ -54,7 +60,7 @@ function Creators() {
 
     useEffect(() => {
         setDevs(shuffleArray(developers))
-    }, [])
+    }, []);
 
     return (
         <>
@@ -65,14 +71,22 @@ function Creators() {
                         <>
                             {devs.map((dev) => {
                                 return (
-                                    <Card className="col-12">
+                                    <Card className="col-12 profileCard">
                                         <Card.Body>
-                                            <div className="col-12">
-                                                <h4>{dev.name}</h4>
-                                            </div>
-                                            <div className="col-12 col-md-4">
-                                                <img src="" className="col-12"/>
-                                            </div>
+                                            <Row>
+                                                <div className="col-12">
+                                                    <a href={dev.linkedIn} target="_blank">
+                                                        <h4>{dev.name}</h4>
+                                                    </a>
+                                                </div>
+                                                <div className="col-12 col-md-4 col-lg-3">
+                                                    <img src={dev.imageUrl} className="col-12 profilePhoto" />
+                                                </div>
+                                                <div className="col-12 col-md-8 col-lg-9">
+                                                    <p>{dev.description}</p>
+                                                </div>
+                                                <b><p className="position">{dev.position}</p></b>
+                                            </Row>
                                         </Card.Body>
                                     </Card>
                                 )
@@ -80,7 +94,7 @@ function Creators() {
                         </>
                     ) : (
                         <>
-
+                            <p>An error has occoured</p>
                         </>
                     )}
                 </Row>

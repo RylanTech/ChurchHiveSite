@@ -1,3 +1,10 @@
+a {
+    color: #F48C04;
+}
+a:hover {
+    color: #FCBB0C;
+}
+
 .navbarHead {
     width: 100px!important;
 }
@@ -22,4 +29,52 @@
 .wrapper2 #slide {
     transition: 1s;
     left: 0;
+}
+
+.profilePhoto {
+    aspect-ratio: 1/1;
+    border-radius: 500px;
+}
+
+.profileCard {
+    margin: 15px 0px;
+}
+
+.position {
+    color: #F48C04;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.pripolpara {
+    background-color: white;
+    margin: 20px 0px;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.slide {
+    width: 100%;
+}
+
+.overCard {
+    background-color: black;
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+}
+
+.overlayImg {
+    opacity: 80%!important;
+}
+
+.CA {
+    background-color: white;
+    margin: 20px 0px;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.CH {
+    height: calc(100vh - 56px);
 }
