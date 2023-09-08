@@ -78,3 +78,10 @@ a:hover {
 .CH {
     height: calc(100vh - 56px);
 }
+
+.devdes {
+    margin: auto;
+    background-color: #FCBB0C;
+    padding: 40px 25px 25px 25px;
+    border-radius: 100px 150px 150px 0px;
+}

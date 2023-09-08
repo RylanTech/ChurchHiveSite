@@ -10,7 +10,7 @@ function Creators() {
         {
             name: "Rylan Workman",
             imageUrl: "/Rylan.jpg",
-            description: `When I was younger I really enjoyed learning about technology. One project I did was taking a laptop base and making it work without the display. I guess you can say I ran my laptop "headless". This led to my interest in development. I loved learning about HTML & CSS to make websites. Little did I know, that I would go so much further to learn things like Javascript, Bootstrap, React, Express.js, mySQL and much more. It also led to my further interest in tinkering with hardware. I've made my own homemade NAS and turned it into a VPN with wireguard so I can access my files from anywhere in the world. I started mining crypto and made a dedicated server for it. I learned so much going through projects like that!
+            description: `When I was younger I really enjoyed learning about technology. One project I did was taking a laptop base and making it work without the display. I guess you can say I ran my laptop "headless". This led to my interest in development, little did I know that I would go so much further to learn things like Javascript, mySQL, React and much more. It also led to my further interest in tinkering with hardware. I've made my own homemade NAS and turned it into a VPN so I can access my files from anywhere in the world. I learned so much going through projects like that!
             Today, I stay up-to-date on the community around technology and development because that is what I love to do. I'm excited to create applications and devices that will improve the world around me!`,
             linkedIn: "https://www.linkedin.com/in/rylanworkman/",
             position: "DevOps Engineer & Backend Developer"
@@ -41,7 +41,7 @@ function Creators() {
             imageUrl: "/Jeff.jfif",
             description: "Hey there! It’s me, Jeff Ordway. I’m a former Parks and Recreation professional turned avid developer, designer, and marketer. I am passionate about harnessing my creativity, problem-solving skills, and adventurous spirit to design innovative, delightful solutions that inspire hope, ignite joy, and empower others.",
             linkedIn: "https://www.linkedin.com/in/jeffordway/",
-            position: "Frontend Developer"
+            position: "UXUI Designer & Frontend Developer"
         }
     ]
 
@@ -82,7 +82,7 @@ function Creators() {
                                                 <div className="col-12 col-md-4 col-lg-3">
                                                     <img src={dev.imageUrl} className="col-12 profilePhoto" />
                                                 </div>
-                                                <div className="col-12 col-md-8 col-lg-9">
+                                                <div className="col-12 col-md-8 col-lg-9 devdes">
                                                     <p>{dev.description}</p>
                                                 </div>
                                                 <b><p className="position">{dev.position}</p></b>
