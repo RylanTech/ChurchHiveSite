@@ -82,10 +82,12 @@ function Creators() {
                                                 <div className="col-12 col-md-4 col-lg-3">
                                                     <img src={dev.imageUrl} className="col-12 profilePhoto" />
                                                 </div>
-                                                <div className="col-12 col-md-8 col-lg-9 devdes">
+                                                <div className="col-12 col-md-8 col-lg-9">
+                                                    <b><p className="position">{dev.position}</p></b>
+                                                <div className="col-12 devdes">
                                                     <p>{dev.description}</p>
                                                 </div>
-                                                <b><p className="position">{dev.position}</p></b>
+                                                </div>
                                             </Row>
                                         </Card.Body>
                                     </Card>

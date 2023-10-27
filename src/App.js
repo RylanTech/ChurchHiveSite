@@ -5,6 +5,12 @@ import Creators from './pages/Creators';
 import SignUp from './pages/SignUp';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import ChurchHive from './pages/ChurchHive';
+import ChurchEventsDispalyPage from './pages/ChurchEventsDisplay';
+import CEDeasy from './pages/CED/Easy';
+import CEDapi from './pages/CED/API';
+import Blank from './pages/CED/Blank';
+import Church from './pages/CED/Church';
+import Church2 from './pages/CED/Chruch2';
 
 function App() {
   return (
@@ -15,6 +21,14 @@ function App() {
         <Route path='/creators' element={<Creators/>}/>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/privacypolicy' element={<PrivacyPolicy/>}/>
+        <Route path='/ced' element={<ChurchEventsDispalyPage/>}/>
+
+        <Route path='/ced/easy' element={<CEDeasy/>}/>
+        <Route path='/ced/api' element={<CEDapi/>}/>
+
+        <Route path="/churcheventsdisplay" element={<Blank/>}/>
+        <Route path='/churcheventsdisplay/:churchName' element={<Church/>}/>
+        <Route path='/churcheventsdisplay/:churchName/:backgroundColor' element={<Church2/>}/>
       </Routes>
     </BrowserRouter>
   );

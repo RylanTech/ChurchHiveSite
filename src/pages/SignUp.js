@@ -45,7 +45,7 @@ function SignUp() {
                         </center>
                         <br /><br />
                         <p>
-                            During this beta stage, Church Hive offers a complimentary one-year subscription for churches that sign up, providing them with full access to our platform's features. However, once the beta stage concludes, there will be a nominal monthly fee of $10 per month for continued access, ensuring our ongoing commitment to providing exceptional services and support to faith communities. Join us now to take advantage of this exclusive offer and revolutionize your church's digital presence!
+                            During this beta stage, Church Hive is free to use for churches that sign up, providing them with full access to our platform's features. However, once the beta stage concludes, there will be a nominal monthly fee of $10 per month for continued access, ensuring our ongoing commitment to providing exceptional services and support to faith communities. Join us and revolutionize your church's digital presence!
                         </p>
 
                     </div>

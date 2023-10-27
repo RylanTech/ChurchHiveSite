@@ -25,6 +25,7 @@ function NavigationBar() {
                             <Nav className="me-auto">
                                 <Link className="nav-link" to="/">Home</Link>
                                 <Link className="nav-link" to="/churchhive">Church Hive</Link>
+                                <Link className="nav-link" to="/ced">Church Events Display</Link>
                                 <Link className="nav-link" to="/signup">Sign up</Link>
                                 <Link className="nav-link" to="/creators">Creators</Link>
                                 <Link className="nav-link" to="/privacypolicy">Privacy Policy</Link>

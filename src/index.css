@@ -42,7 +42,7 @@ a:hover {
 
 .position {
     color: #F48C04;
-    margin-top: 25px;
+    margin-top:10px;
     font-size: 20px;
 }
 
@@ -83,5 +83,31 @@ a:hover {
     margin: auto;
     background-color: #FCBB0C;
     padding: 40px 25px 25px 25px;
-    border-radius: 100px 150px 150px 0px;
+    border-radius: 25px;
 }
+
+.chimg {
+    width: 70px;
+  }
+  .chimg2 {
+    margin: 50px 20px 10px 20px;
+    width: 100px;
+  }
+  .chimg3 {
+    width: 70px;
+    float: right;
+  }
+  .churchName {
+    float: right;
+    margin: 22px;
+  }
+  .eventModule {
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .churchevents {
+    border-radius: 50px;
+    padding: 20px;
+  }
