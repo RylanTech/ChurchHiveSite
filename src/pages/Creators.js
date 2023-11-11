@@ -31,7 +31,7 @@ function Creators() {
         },
         {
             name: "Andrew Brown",
-            imageUrl: "",
+            imageUrl: "/andrew.JPG",
             description: "My resume states that I am a Software Developer/Professional Dancer. I have extensive experience with the JavaScript MERN stack. I have developed apps that utilize a React front end connected to a Node.js backend using either a MySQL database or a MongoDB database, along with authentication and API calls. I was also a competitive ballroom dancer for nearly a decade. ",
             linkedIn: "https://www.linkedin.com/in/andrew-f-g-brown/",
             position: "Frontend Developer"

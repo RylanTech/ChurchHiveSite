@@ -1,5 +1,6 @@
 import { Card, Carousel, Container, Row } from "react-bootstrap"
 import NavigationBar from "../components/NavigationBar"
+import { Link } from "react-router-dom"
 
 function Homepage() {
     return (
@@ -18,20 +19,35 @@ function Homepage() {
                         </Carousel.Item>
                     </Carousel>
                 </Row>
-                <br/><br/>
+                <br /><br />
                 <Row>
-                    <div className="col-lg-2"/>
-                    <Card className="overCard text-white col-12 col-lg-8">
-                        <Card.Img className="overlayImg" src="https://images.unsplash.com/photo-1604882355447-02f728a295a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80" alt="Card image" />
-                        <Card.ImgOverlay>
-                            <Card.Title>Does your church need to grow connections?</Card.Title>
-                            <Card.Text>
-                                Church Hive aims to connect people and churches together.
-                            </Card.Text>
-                        </Card.ImgOverlay>
-                    </Card>
+                    <div className="sideCard">
+                        <Row>
+                            <img className="col-12 col-md-6 cedImg"
+                                src="ced.png"
+                            />
+                            <div className="col-12 col-md-6 cedTextBox">
+                                <p>
+                                    <h4>
+                                        Church Events Display
+                                    </h4>
+                                    With CED you can dynamically update your church's events just by updating them in Church Hive from the app!
+                                </p>
+                                <p>
+                                    <Link to={'/ced'}>Click here to learn more!</Link>
+                                </p>
+                            </div>
+                        </Row>
+                    </div>
                 </Row>
             </Container>
+            <div className="footer">
+                <div className="footerObj">
+                    <Link to={`/creators`}>Creators</Link>
+                    <Link to={`/signup`}>SignUp</Link>
+                    <Link to={`privacypolicy`}>Privacy Policy</Link>
+                </div>
+            </div>
         </>
     )
 }

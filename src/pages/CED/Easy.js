@@ -26,13 +26,17 @@ function CEDeasy() {
                             <center>
                                 <h2>How It Works</h2>
                             </center>
-                            <p>CED works by you allowcating a portion of your website to Church Hive with a technology called iframe. In simple terms, you are putting our wesbite inside your website. How you position it is completely up to you and is configured on your website. Intergrating an iframe inside of a website veries depending on what you use to set up your website, here are some videos on the more common methods:</p>
+                            <p>CED (Church Events Display) works by you allowcating a portion of your website to Church Hive with a technology called iframe. In simple terms, you are putting our wesbite inside your website. How you position it is completely up to you and is configured on your website. Intergrating an iframe inside of a website varies depending on what you use to set up your website, here are some youtube videos on the more common methods:</p>
                             HTML:<br />
-                            <a href="https://youtube.com">Youtube video</a>
+                            <a target="_blank" href="https://youtu.be/aRGdDy18qfY?si=2h-T-gKritj3I55o">"Learn HTML iframes in 3 minutes"</a>
                             <br /><br />
 
                             WordPress:<br />
-                            <a href="https://youtube.com">Youtube video</a>
+                            <a target="_blank" href="https://youtu.be/vqs5GbGmH64?si=jbbLRwcKIN7Sf4VM">"How to Embed an iFrame in WordPress (Responsive YouTube Embeds)"</a>
+                            <br /><br />
+
+                            Wix:<br />
+                            <a target="_blank" href="https://youtu.be/zVqPqDkpjyM?si=PQx9kkjw43UyD0B5">"How To Add HTML Code or Embed Codes in Wix"</a>
                             <br /><br />
                         </div>
                         </div>
@@ -71,7 +75,7 @@ function CEDeasy() {
                             <br />
                             iframe:<br />
                             <Form.Control
-                            value={`<iframe width="${width}" height="${height}" src="https://localhost:3000/churcheventsdisplay/${name}"/>`}
+                            value={`<iframe width="${width}" height="${height}" src="https://localhost:3001/churcheventsdisplay/${name}"/>`}
                             />
                         </div>
                        </div>
@@ -83,7 +87,7 @@ function CEDeasy() {
                 </center>
                 <br />
                     <center>
-                    <iframe className="churchevents" width={widthTwo} height={heightTwo} src={`http://localhost:3000/churcheventsdisplay/${nameTwo}`} />
+                    <iframe className="churchevents" width={widthTwo} height={heightTwo} src={`http://localhost:3001/churcheventsdisplay/${nameTwo}`} />
                     </center>
             </Container>
         </>

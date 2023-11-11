@@ -1,13 +1,19 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 a {
     color: #F48C04;
 }
+
 a:hover {
     color: #FCBB0C;
 }
 
 .navbarHead {
-    width: 100px!important;
+    width: 100px !important;
 }
+
 .navbar {
     background-color: white;
 }
@@ -15,7 +21,7 @@ a:hover {
 .wrapper {
     position: relative;
     width: 100px;
-    height: 100px;     
+    height: 100px;
 }
 
 #slide {
@@ -42,7 +48,7 @@ a:hover {
 
 .position {
     color: #F48C04;
-    margin-top:10px;
+    margin-top: 10px;
     font-size: 20px;
 }
 
@@ -65,7 +71,7 @@ a:hover {
 }
 
 .overlayImg {
-    opacity: 80%!important;
+    opacity: 80% !important;
 }
 
 .CA {
@@ -88,26 +94,55 @@ a:hover {
 
 .chimg {
     width: 70px;
-  }
-  .chimg2 {
+}
+
+.chimg2 {
     margin: 50px 20px 10px 20px;
     width: 100px;
-  }
-  .chimg3 {
+}
+
+.chimg3 {
     width: 70px;
     float: right;
-  }
-  .churchName {
+}
+
+.churchName {
     float: right;
-    margin: 22px;
-  }
-  .eventModule {
+    margin-top: 22px;
+}
+
+.eventModule {
     border: 2px solid black;
     padding: 20px;
     border-radius: 10px;
-  }
-  
-  .churchevents {
+}
+
+.churchevents {
     border-radius: 50px;
     padding: 20px;
-  }
+}
+
+.sideCard {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.cedImg {
+    padding: 15px;
+    border-radius: 25px!important;
+}
+.cedTextBox {
+    padding: 15px;
+}
+
+.footer {
+    background-color: #9f6110;
+}
+.footerObj {
+    justify-content: space-evenly;
+    display: flex;
+    padding: 15px;
+}
+.churchHeader {
+    margin-top: 20px;
+}

@@ -21,10 +21,10 @@ function App() {
         <Route path='/creators' element={<Creators/>}/>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/privacypolicy' element={<PrivacyPolicy/>}/>
-        <Route path='/ced' element={<ChurchEventsDispalyPage/>}/>
+        <Route path='/ced' element={<CEDeasy/>}/>
 
-        <Route path='/ced/easy' element={<CEDeasy/>}/>
-        <Route path='/ced/api' element={<CEDapi/>}/>
+        {/* <Route path='/ced/easy' element={<CEDeasy/>}/>
+        <Route path='/ced/api' element={<CEDapi/>}/> */}
 
         <Route path="/churcheventsdisplay" element={<Blank/>}/>
         <Route path='/churcheventsdisplay/:churchName' element={<Church/>}/>

@@ -92,12 +92,12 @@ function Church() {
                     <div className="eventModule col-12">
                         <h3><b>{event.eventTitle}</b></h3>
                         {eventDay}, {eventDate} at {eventTime}
-                        <br/><br/>
-                        <b>Description:</b><br/>
+                        <br /><br />
+                        <b>Description:</b><br />
                         {event.description}
-                        <br/><br/>
-                        <b>Location:</b><br/>
-                        {location.street}<br/>
+                        <br /><br />
+                        <b>Location:</b><br />
+                        {location.street}<br />
                         {location.city} {location.state}, {location.zip}
                     </div>
                 </>
@@ -109,12 +109,12 @@ function Church() {
         <>
             {chrch ? (
                 <>
-                    <div className="containr">
-                    {churchHeader()}
                     <Container>
+                        <div className="churchHeader">
+                        {churchHeader()}
+                        </div>
                         {mapThroughEvents()}
                     </Container>
-                    </div>
                 </>
             ) : (
                 <>
