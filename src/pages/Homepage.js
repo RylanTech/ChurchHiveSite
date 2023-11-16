@@ -10,11 +10,11 @@ function Homepage() {
                 <Row>
                     <Carousel>
                         <Carousel.Item>
-                            <img className="slide" src="/slide1.png" />
+                            <img className="slide" src="https://i.postimg.cc/cC99hP0w/slide1.png" />
                         </Carousel.Item>
                         <Carousel.Item>
                             <a target="_blank" href="https://play.google.com/store/apps/details?id=com.church.hive">
-                                <img className="slide" src="/slide2.png" />
+                                <img className="slide" src="https://i.postimg.cc/NGpzQ2mF/slide2.png" />
                             </a>
                         </Carousel.Item>
                     </Carousel>
@@ -24,7 +24,7 @@ function Homepage() {
                     <div className="sideCard">
                         <Row>
                             <img className="col-12 col-md-6 cedImg"
-                                src="ced.png"
+                                src="https://i.postimg.cc/FFZ21B59/ced.png"
                             />
                             <div className="col-12 col-md-6 cedTextBox">
                                 <p>

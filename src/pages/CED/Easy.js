@@ -75,7 +75,7 @@ function CEDeasy() {
                             <br />
                             iframe:<br />
                             <Form.Control
-                            value={`<iframe width="${width}" height="${height}" src="https://localhost:3001/churcheventsdisplay/${name}"/>`}
+                            value={`<iframe width="${width}" height="${height}" src="https://churchhive.app/churcheventsdisplay/${name}"/>`}
                             />
                         </div>
                        </div>
@@ -87,7 +87,7 @@ function CEDeasy() {
                 </center>
                 <br />
                     <center>
-                    <iframe className="churchevents" width={widthTwo} height={heightTwo} src={`http://localhost:3001/churcheventsdisplay/${nameTwo}`} />
+                    <iframe className="churchevents" width={widthTwo} height={heightTwo} src={`https://churchhive.app/churcheventsdisplay/${nameTwo}`} />
                     </center>
             </Container>
         </>

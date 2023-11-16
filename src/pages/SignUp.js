@@ -45,7 +45,7 @@ function SignUp() {
                         </center>
                         <br /><br />
                         <p>
-                            During this beta stage, Church Hive is free to use for churches that sign up, providing them with full access to our platform's features. However, once the beta stage concludes, there will be a nominal monthly fee of $10 per month for continued access, ensuring our ongoing commitment to providing exceptional services and support to faith communities. Join us and revolutionize your church's digital presence!
+                            During this beta stage, Church Hive is free to use for churches that sign up, providing them with full access to our platform's features. However, once the beta stage concludes, there will be a normal monthly fee up to $10 per month for continued access, ensuring our ongoing commitment to providing exceptional services and support to faith communities. Once we switch to that model, you can decide not to use our services if you so wish. Join us and revolutionize your church's digital presence!
                         </p>
 
                     </div>
@@ -57,7 +57,7 @@ function SignUp() {
                         </center>
                         <br /><br />
                         <p>
-                            Email rylandeveloper@gmail.com with your request and proof of leadership (Such as a Pastoral Certificate) of the church you would like to delete. A call will be given to the Church's phone number that was provided with that church to confirm that you would like your account & churches deleted.
+                            Email rylandeveloper@gmail.com with your request and proof of leadership (Such as a Pastoral Certificate) of the church you would like to delete. A call will be given to the Church's phone number that was provided with that church to confirm that you would like your account deleted. Doing this will also conclude in churches owned by that account to be deleted.
                         </p>
                     </div>
                 </Row>
