@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { Container, Row } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import { ChurchContext } from "../../contexts/churchContexts"
 
 function Church2() {
@@ -48,22 +48,22 @@ function Church2() {
             setChrch(ch)
         }
         gettingChurch()
-    }, [])
+    }, [church, getChurch])
 
     function churchHeader() {
         if (chrch.imageUrl !== "blank") {
             return (
                 <>
-                    <img src="/ChurchHive.png" className="chimg" />
+                    <img src="/ChurchHive.png" alt="Church Hive" className="chimg" />
                     <div className="churchName">{chrch.churchName}</div>
                 </>
             )
         } else {
             return (
                 <>
-                    <img src="/ChurchHive.png" className="chimg" />
+                    <img src="/ChurchHive.png" alt="Church Hive" className="chimg" />
                     <center>{chrch.churchName}</center>
-                    <img src={chrch.imageUrl} className="chimg3" />
+                    <img src={chrch.imageUrl} alt="Church" className="chimg3" />
                 </>
             )
         }

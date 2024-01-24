@@ -31,10 +31,10 @@ function SignUp() {
                             In order to create your account you NEED to meet the following criteria,<br />
                             <ol>
                                 <li>Be part of a Church Preaching the Gospel of Jesus Christ</li>
-                                <li>Be in leadership of that Church/Churches or given permission by appropriate leadership</li>
+                                <li>Be in leadership of that Church/Churches, or given permission by appropriate leadership</li>
                             </ol>
                             This list is subject to change.
-                            Email <a href="mailto:rylandeveloper@gmail.com">rylandeveloper@gmail.com</a> with your request and proof of leadership (Such as a Pastoral License).
+                            Email <a href="mailto:rylan@churchhive.app">rylan@churchhive.app</a> with your request and proof of leadership (Such as a Pastoral License).
                         </p>
                     </div>
 
@@ -57,7 +57,7 @@ function SignUp() {
                         </center>
                         <br /><br />
                         <p>
-                            Email rylandeveloper@gmail.com with your request and proof of leadership (Such as a Pastoral Certificate) of the church you would like to delete. A call will be given to the Church's phone number that was provided with that church to confirm that you would like your account deleted. Doing this will also conclude in churches owned by that account to be deleted.
+                            Email <a href="mailto:rylan@churchhive.app">rylan@churchhive.app</a> with your request and proof of leadership (Such as a Pastoral Certificate) of the church you would like to delete. A call will be given to the Church's phone number that was provided with that church to confirm that you would like your account deleted. Doing this will also conclude in churches owned by that account to be deleted.
                         </p>
                     </div>
                 </Row>

@@ -1,4 +1,4 @@
-import { Card, Carousel, Container, Row } from "react-bootstrap"
+import { Carousel, Container, Row } from "react-bootstrap"
 import NavigationBar from "../components/NavigationBar"
 import { Link } from "react-router-dom"
 
@@ -10,11 +10,16 @@ function Homepage() {
                 <Row>
                     <Carousel>
                         <Carousel.Item>
-                            <img className="slide" src="https://i.postimg.cc/cC99hP0w/slide1.png" />
+                            <img alt="Welcome to Church Hive" className="slide" src="https://i.postimg.cc/cC99hP0w/slide1.png" />
                         </Carousel.Item>
                         <Carousel.Item>
-                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.church.hive">
-                                <img className="slide" src="https://i.postimg.cc/NGpzQ2mF/slide2.png" />
+                            <a target="_blank" href="https://apps.apple.com/us/app/church-hive/id6473189237" rel="noreferrer">
+                                <img alt="Church Hive is available on Google Play" className="slide" src="https://i.postimg.cc/qMWxTmmm/chappstore.png" />
+                            </a>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.church.hive" rel="noreferrer">
+                                <img alt="Church Hive is available on the Apple App Store" className="slide" src="https://i.postimg.cc/NGpzQ2mF/slide2.png" />
                             </a>
                         </Carousel.Item>
                     </Carousel>
@@ -25,6 +30,7 @@ function Homepage() {
                         <Row>
                             <img className="col-12 col-md-6 cedImg"
                                 src="https://i.postimg.cc/FFZ21B59/ced.png"
+                                alt="Church Events Display"
                             />
                             <div className="col-12 col-md-6 cedTextBox">
                                 <p>

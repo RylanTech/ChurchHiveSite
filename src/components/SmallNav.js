@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap'
+import { Helmet } from 'react-helmet';
 import { Link, Outlet } from 'react-router-dom'
 
 function SmallNav() {
@@ -7,6 +7,16 @@ function SmallNav() {
 
     return (
         <>
+            <Helmet>
+                <title>Church Hive - Connect with Churches!</title>
+                <meta name="title" content="Church Hive" />
+                <meta name="description" content="Church Hive is an app for churches and people to connect" />
+                <meta name="keywords" content="Church, Hive, Church Hive, Church Website, Church app, Church, Church events, find Church, Connect with Churches, Tool for Churches" />
+                <meta name="robots" content="index, follow" />
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta name="language" content="English" />
+                <link rel='canonical' href='/' />
+            </Helmet>
             <div>
                 <Navbar className="nav-color" expand="lg">
                     <Container>
@@ -20,7 +30,7 @@ function SmallNav() {
                                 <Link className="nav-link" to="/ced">CED (BETA)</Link>
                                 <Link className="nav-link" to="/signup">Sign up</Link>
                                 <Link className="nav-link" to="/creators">Creators</Link>
-                                <Link className="nav-link" to="/privacypolicy">Privacy Policy</Link>
+                                {/* <Link className="nav-link" to="/privacypolicy">Privacy Policy</Link> */}
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

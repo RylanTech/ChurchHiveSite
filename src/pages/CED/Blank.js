@@ -4,7 +4,7 @@ function Blank() {
     return (
         <>
             <center>
-                <img className="chimg2" src="/ChurchHive.png" />
+                <img className="chimg2" src="/ChurchHive.png" alt="Church Hive" />
                 <p>Welcome to Church Hive's Church Event Display (CED)</p>
                 <p>
                     In order to get a church's events, go to <br/>
