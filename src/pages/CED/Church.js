@@ -33,8 +33,6 @@ function Church() {
         async function gettingChurch() {
             let ch = await getChurch(church)
 
-            ch.Events = ch.Events.reverse()
-
             setChrch(ch)
         }
         gettingChurch()
