@@ -80,16 +80,57 @@ function Church() {
             const eventDate = isoDate ? formatDate.format(isoDate) : "";
             const eventDay = isoDate ? formatDay.format(isoDate) : "";
             const eventTime = isoDate ? formatTime.format(isoDate) : "";
+
+            let eventEndDate = false
+            let eventEndDay = false
+            let eventEndTime = false
+
+            if (event.endDate) {
+                const thisEndIsoDate = new Date(convertUtcToLocal(event.endDate))
+                const isoEndDate = new Date(thisEndIsoDate);
+                const formatEndDate = Intl.DateTimeFormat("en-us", {
+                    dateStyle: "long",
+                });
+                const formatEndDay = Intl.DateTimeFormat("en-us", {
+                    weekday: "long",
+                });
+                const formatEndTime = Intl.DateTimeFormat("en-us", {
+                    timeStyle: "short",
+                });
+
+                eventEndDate = isoEndDate ? formatEndDate.format(isoEndDate) : "";
+                eventEndDay = isoEndDate ? formatEndDay.format(isoEndDate) : "";
+                eventEndTime = isoEndDate ? formatEndTime.format(isoEndDate) : "";
+            }
+
             console.log(event)
 
             let location = event.location
+
+            function eventDateType() {
+                if (event.endDate) {
+                    return (
+                        <>
+                            {eventDay}, {eventDate} <br/>
+                            -<br/>
+                            {eventEndDay}, {eventEndDate}
+                        </>
+                    )
+                } else {
+                    return (
+                        <>
+                            {eventDay}, {eventDate} at {eventTime}
+                        </>
+                    )
+                }
+            }
 
             return (
                 <>
                     <br />
                     <div className="eventModule col-12">
                         <h3><b>{event.eventTitle}</b></h3>
-                        {eventDay}, {eventDate} at {eventTime}
+                        {eventDateType()}
                         <br /><br />
                         <b>Description:</b><br />
                         {event.description}
@@ -109,7 +150,7 @@ function Church() {
                 <>
                     <Container>
                         <div className="churchHeader">
-                        {churchHeader()}
+                            {churchHeader()}
                         </div>
                         {mapThroughEvents()}
                     </Container>

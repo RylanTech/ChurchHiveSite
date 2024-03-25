@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import NavigationBar from "../components/NavigationBar"
 import { Card, Container, Row } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 
 function Creators() {
     const [devs, setDevs] = useState()
@@ -63,6 +64,18 @@ function Creators() {
 
     return (
         <>
+            <Helmet>
+                <meta name="title" content="Church Hive - Connect with Churches" />
+                <meta name="description" content="Church Hive is a platform where churches can share their events
+                with their congregation and users" />
+                <meta name="keywords" content="Church Hive, Connect with Churches, Church services, Church
+                website, Church events, church events near me, church locations, church details, Church Hive App
+                Play Store, App store, Church Hive Creators, find Churches, who made Church Hive" />
+                <meta name="robots" content="index, follow" />
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <meta name="language" content="English" />
+                <link rel='canonical' href='/' />
+            </Helmet>
             <NavigationBar />
             <Container>
                 <Row>
@@ -83,9 +96,9 @@ function Creators() {
                                                 </div>
                                                 <div className="col-12 col-md-8 col-lg-9">
                                                     <b><p className="position">{dev.position}</p></b>
-                                                <div className="col-12 devdes">
-                                                    <p>{dev.description}</p>
-                                                </div>
+                                                    <div className="col-12 devdes">
+                                                        <p>{dev.description}</p>
+                                                    </div>
                                                 </div>
                                             </Row>
                                         </Card.Body>
