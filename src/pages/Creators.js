@@ -4,7 +4,6 @@ import { Card, Container, Row } from "react-bootstrap";
 
 function Creators() {
     const [devs, setDevs] = useState()
-
     function shuffleArray(array) {
         // Create a copy of the input array to avoid modifying the original array
         const shuffledArray = [...array];
@@ -15,8 +14,9 @@ function Creators() {
             [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
         }
 
-        setDevs(array)
+        setDevs(shuffledArray); // Set the state to the shuffled array
     }
+
 
     useEffect(() => {
         const developers = [
@@ -51,7 +51,7 @@ function Creators() {
             },
             {
                 name: "Jeff Ordway",
-                imageUrl: "https://i.postimg.cc/5N9W3MqY/Jeff.jpg",
+                imageUrl: "https://i.postimg.cc/VkKYYsfk/ordway-jeff-brandmark-alt.jpg",
                 description: "Hey there! It’s me, Jeff Ordway. I’m a former Parks and Recreation professional turned avid developer, designer, and marketer. I am passionate about harnessing my creativity, problem-solving skills, and adventurous spirit to design innovative, delightful solutions that inspire hope, ignite joy, and empower others.",
                 linkedIn: "https://www.linkedin.com/in/jeffordway/",
                 position: "UXUI Designer & Frontend Developer"
@@ -83,9 +83,9 @@ function Creators() {
                                                 </div>
                                                 <div className="col-12 col-md-8 col-lg-9">
                                                     <b><p className="position">{dev.position}</p></b>
-                                                <div className="col-12 devdes">
-                                                    <p>{dev.description}</p>
-                                                </div>
+                                                    <div className="col-12 devdes">
+                                                        <p>{dev.description}</p>
+                                                    </div>
                                                 </div>
                                             </Row>
                                         </Card.Body>

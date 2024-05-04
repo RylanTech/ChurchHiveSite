@@ -13,6 +13,9 @@ function Homepage() {
                             <img alt="Welcome to Church Hive" className="slide" src="https://i.postimg.cc/cC99hP0w/slide1.png" />
                         </Carousel.Item>
                         <Carousel.Item>
+                            <img alt="Church Hive is available on the Apple App Store" className="slide" src="https://i.postimg.cc/Bvt8Xq4c/churchhvie.png" />
+                        </Carousel.Item>
+                        <Carousel.Item>
                             <a target="_blank" href="https://apps.apple.com/us/app/church-hive/id6473189237" rel="noreferrer">
                                 <img alt="Church Hive is available on Google Play" className="slide" src="https://i.postimg.cc/qMWxTmmm/chappstore.png" />
                             </a>
