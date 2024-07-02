@@ -26,7 +26,6 @@ function SmallNav() {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
                                 <Link className="nav-link" to="/">Home</Link>
-                                <Link className="nav-link" to="/churchhive">Church Hive</Link>
                                 <Link className="nav-link" to="/ced">CED (BETA)</Link>
                                 <Link className="nav-link" to="/signup">Sign up</Link>
                                 <Link className="nav-link" to="/creators">Creators</Link>
